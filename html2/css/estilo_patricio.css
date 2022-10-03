@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body {
+
+    background-image: linear-gradient(to left, rgba(255,255,255,0.9), rgba(255, 255, 255, 0.1) 99%), url('../imagenes/background-with-hibiscus-flower.jpg');
+}
+header {
+    height: 180px;
+    width: 100%;
+    background-color: coral;
+    display: flex;
+}
+header img {
+    height:160px;
+    padding:10px 20px 0px 50px;
+}
+nav {
+    background-color: coral;
+    font-family: 'Sigmar One', cursive;
+    text-align: right;
+}
+nav li {
+    display: inline-block;
+    padding-right: 10px;
+}
+section{
+    display:flex;
+}
+#articulos {
+    display:flex;
+}
