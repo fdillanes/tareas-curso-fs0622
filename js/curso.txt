@@ -1,0 +1,32 @@
+HTML
+
+<form id = "form">
+  <label for "nombre">Nombre: <input id="nombre" type="text"></label>
+  <label for "apellido">apellido: <input id="apellido" type="text"></label>
+  <select name ="select" id="genero">
+    <option value="masc">masculino</option>
+     <option value="fem">femenino</option>
+     <option value="otr">otro</option>
+  </select>
+  <button type="submit">enviar</button>
+</form>
+<p id="log"></p>
+<script src="./js/sandbox.js"></script>
+
+
+JS
+
+function logEnvioFormulario(event){
+  console.log(event);
+  const nombre=getElementByID("nombre").value;
+  const apellido=getElementByID("apellido").value;
+  const genero=getElementByID("genero").value;
+  log.textContent='Formulario enviado \n
+  nombre= ${nombre}| apellido= ${apellido} | genero = ${genero}';
+  event.preventDefault();
+}
+
+const log=document.getElementByID("log");
+const formulario=document.getElementByID("form");
+
+formulario.addEventListener("submit", logEnvioFormulario);
