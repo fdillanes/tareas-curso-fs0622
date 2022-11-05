@@ -43,9 +43,18 @@
         y.print();
         z.print();
     </script> -->
-    <script>
-        
-    </script>
+    <form id = "form">
+        <label for "nombre">Nombre: <input id="nombre" type="text"></label>
+        <label for "apellido">apellido: <input id="apellido" type="text"></label>
+        <select name ="select" id="genero">
+          <option value="masc">masculino</option>
+           <option value="fem">femenino</option>
+           <option value="otr">otro</option>
+        </select>
+        <button type="submit">enviar</button>
+      </form>
+      <p id="log"></p>
+      <script src="./js/respuesta.js"></script>
     
 </body>
 </html>

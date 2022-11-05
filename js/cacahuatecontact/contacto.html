@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <title>Bob Esponja Super Site</title>
+  </head>
+  <body>
+    <header>
+      <img src="./imagenes/Bob_esponja_logotipo.svg" />
+    </header>
+    <div class="contenedor">
+      <aside class="allado">
+        <p>
+          Esta es la página de un fanático, de un cacahuate, para el más ilustre
+          ciudadano de Fondo de Bikini
+        </p>
+      </aside>
+      <section class="seccion">
+        <form id="contacto">
+          <fieldset>
+            <h2>Encuesta</h2>
+            <label for="nombre">Nombre: <input type="text" id="nombre" /></label><br />
+            <label for="apellido">Apellido: <input type="text" id="apellido" /></label><br />
+            <label for="correo">e-Mail: &nbsp;&nbsp; <input type="email" id="correo" /></label><br />
+            <br />
+            <label>Elija su personaje preferido</label><br />
+            <input type="radio" name="personaje" value="bob" /> Bob <br />
+            <input type="radio" name="personaje" value="patricio" /> Patricio <br />
+            <input type="radio" name="personaje" value="calamardo" /> Calamardo <br />
+            <input type="radio" name="personaje" value="ardillita" /> Ardillita <br />
+          </fieldset>
+          <button type="reset">borrar</button>
+          <button type="submit">enviar</button>
+        </form>
+      </section>
+      <div id="log" class="respuesta"></div>
+      <script src="./js/respuesta.js"></script>
+      <footer class="alpie">
+        Copyleft: Industrias cerebro de Maní S.A. y NuncaSeréDiseñador.com
+        Avenida Poseidón 248. Fondo del Mar.
+      </footer>
+    </div>
+  </body>
+</html>
