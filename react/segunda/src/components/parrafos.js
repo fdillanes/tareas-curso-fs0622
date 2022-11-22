@@ -15,7 +15,9 @@ const titulito = "Hermoso"
 const Parrafos = () => {
     return (
         <div>
-            <Encabezado subtitulo={titulito} />
+            <Encabezado subtitulo={titulito} >
+            <h3>sutil destello</h3>
+            </Encabezado>
             {frases.map(frase => {
                 return <p key={frase.id}>{frase.texto}</p>
             })}
